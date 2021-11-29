@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Style -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/app/scss/style.css">
 
     <!-- Title -->
     <title>Document</title>
 </head>
+
 <body>
     <main>
-
+        <header class="header">
+            <nav class="container flex flex-jc-sb flex-ai-c">
+                <!-- <a href="#" class="header__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a> -->
+                <div class="header__logo">
+                    <img src="/images/img/logo-descktop.svg" alt="">
+                </div>
+                <div class="header__links">
+                    <ul>
+                        <li><a href="#">shop</a></li>
+                        <li><a href="#">real winter</a></li>
+                        <li><a href="#">complementos</a></li>
+                        <li><a href="#">editoriales</a></li>
+                    </ul>
+                </div>
+                <div class="header__cta">
+                    <input type="text" placeholder="Search..">
+                    <a href="">ingresar</a>
+                    <a href="">carrito <img src="/images/icons/bag.svg" alt=""></a>
+                </div>
+            </nav>
+        </header>
     </main>
 </body>
+
 </html>

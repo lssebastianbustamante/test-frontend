@@ -86,6 +86,12 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.container {
+  width: 80rem;
+  margin: 0 auto;
 }
 
 .flex {
@@ -112,7 +118,53 @@ body {
           align-items: center;
 }
 
-.header {
-  position: relative;
+.header nav {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.header__logo {
+  width: 158px;
+  height: 32px;
+}
+
+.header__links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__links ul > li {
+  display: inline-block;
+}
+
+.header__links ul > li:not(:last-child) {
+  margin-right: 32px;
+}
+
+.header__links a {
+  text-decoration: none;
+  display: block;
+  font-size: 0.875rem;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+
+.header__links a:hover {
+  color: #d81313;
+}
+
+.header__toggle > span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: black;
+}
+
+.header__toggle > span:not(:last-child) {
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=style.css.map */
