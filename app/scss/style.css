@@ -89,6 +89,11 @@ body {
   font-family: 'Public Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .container {
   width: 80rem;
   margin: 0 auto;
@@ -118,14 +123,45 @@ body {
           align-items: center;
 }
 
+.header {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.header__offer {
+  background-color: black;
+  height: 40px;
+}
+
+.header__offer p {
+  color: white;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  text-transform: full-size-kana;
+}
+
+.header__offer p > span {
+  font-weight: normal;
+}
+
 .header nav {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .header__logo {
   width: 158px;
   height: 32px;
+}
+
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .header__links ul {
@@ -155,6 +191,80 @@ body {
 
 .header__links a:hover {
   color: #d81313;
+}
+
+.header__search {
+  border-bottom: 1px solid black;
+  padding-bottom: 2px;
+}
+
+.header__search button {
+  background-image: url("/images/icons/search.svg");
+  width: 16px;
+  height: 16px;
+  border: none;
+}
+
+.header__search input {
+  border: none;
+  width: 131px;
+  font-size: 0.75rem;
+}
+
+.header__search input::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+
+.header__search input:-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+.header__search input::-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+.header__search input::placeholder {
+  text-transform: uppercase;
+}
+
+.header__search input:focus {
+  outline: none;
+}
+
+.header__search input:active {
+  border: none;
+}
+
+.header__cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__cta a {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.9375rem;
+  color: #999999;
+  padding-right: 8px;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+
+.header__cta a:hover {
+  color: #d81313;
+}
+
+.header__cta > span {
+  display: inline-block;
+  background-image: url("/images/icons/bag.svg");
+  width: 40px;
+  height: 69px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .header__toggle > span {
