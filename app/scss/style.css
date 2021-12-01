@@ -308,4 +308,73 @@ a {
 .header__toggle > span:not(:last-child) {
   margin-bottom: 5px;
 }
+
+.shop__breadcrumb {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.shop__breadcrumb ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.shop__breadcrumb ul li {
+  font-size: 0.6875rem;
+  font-weight: normal;
+}
+
+.shop__breadcrumb ul li h1 {
+  color: black;
+  font-size: 1.75rem;
+  font-weight: normal;
+}
+
+.shop__breadcrumb ul li > span {
+  display: inline-block;
+  background-image: url("/images/icons/arrow.svg");
+  width: 10px;
+  height: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.shop__left p {
+  color: black;
+  font-weight: normal;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.shop__left .sidebar aside {
+  border-top: 1px solid #d9d9d9;
+  width: 270px;
+}
+
+.shop__left .sidebar aside h4 {
+  color: black;
+  font-weight: normal;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+}
+
+.shop__left .sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.shop__left .sidebar ul li :not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.shop__left .sidebar ul li input {
+  margin: 0;
+}
+
+.shop__left .sidebar ul li > label {
+  margin-left: 10px;
+  font-size: 0.875rem;
+  color: #999999;
+  font-weight: normal;
+}
 /*# sourceMappingURL=style.css.map */

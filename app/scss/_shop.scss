@@ -1,0 +1,88 @@
+.shop {
+
+    &__breadcrumb {
+        border-bottom: 1px solid $ligthGray;
+
+        ul {
+            list-style: none;
+            margin-bottom: 0;
+
+            li {
+                font-size: $font-11;
+                font-weight: normal;
+
+                h1{
+                    color: $black;
+                    font-size: $font-28;
+                    font-weight: normal;
+                }
+
+                > span {  
+                    display: inline-block;
+                    background-image: url('/images/icons/arrow.svg');
+                    width: 10px;
+                    height: 10px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-right: 5px;
+                }
+
+            }
+        } 
+    }
+
+    &__left {
+
+        p {
+            color: $black;
+            font-weight: normal;
+            font-size: $font-14;
+            text-transform: uppercase;
+        }
+
+        .sidebar {
+           
+            aside {
+                border-top: 1px solid $ligthGray;
+                width: 270px;
+
+                h4 {
+                    color: $black;
+                    font-weight: normal;
+                    font-size: $font-14; 
+                    text-transform: capitalize;
+                   }
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    :not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+
+                    input {
+                        margin: 0;
+                    }
+                }
+    
+                li > label {
+                    margin-left: 10px;
+                    font-size: $font-14;
+                    color: $gray;
+                    font-weight: normal;
+                }
+            }
+
+            
+        }
+
+    }
+
+    &__right {
+
+    }
+
+
+}
