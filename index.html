@@ -59,70 +59,87 @@
         </header>
 
         <section class="shop container">
-            <div class="shop__breadcrumb  flex flex-ai-c">
+            <div class="shop__breadcrumb flex-ai-c">
                 <ul>
                     <li><span></span>Invierno 20202</li>
-                    <li><h1>Titulo de categoria</h1></li>
+                    <li>
+                        <h1>Titulo de categoria</h1>
+                    </li>
                 </ul>
             </div>
-            <div class="shop__left">
-                <p>Filtrar por</p>
-                <div class="sidebar">
-                    <aside>
-                        <h4>talle</h4>
-                        <ul class="category">
-                            <li><input type="radio" value="35"><label>35</label></li>
-                            <li><input type="radio" value="36"><label>36</label></li>
-                            <li><input type="radio" value="37"><label>37</label></li>
-                            <li><input type="radio" value="38"><label>38</label></li>
-                            <li><input type="radio" value="39"><label>39</label></li>
-                            <li><input type="radio" value="40"><label>40</label></li>
-                            <li><input type="radio" value="41"><label>41</label></li>
-                        </ul>
-                    </aside>
-                    <aside>
-                        <h4>talle</h4>
-                        <ul class="category">
-                            <li><input type="radio" value="35"><label>35</label></li>
-                            <li><input type="radio" value="36"><label>36</label></li>
-                            <li><input type="radio" value="37"><label>37</label></li>
-                            <li><input type="radio" value="38"><label>38</label></li>
-                            <li><input type="radio" value="39"><label>39</label></li>
-                            <li><input type="radio" value="40"><label>40</label></li>
-                            <li><input type="radio" value="41"><label>41</label></li>
-                        </ul>
-                    </aside>
-                    <aside>
-                        <h4>talle</h4>
-                        <ul class="category">
-                            <li><input type="radio" value="35"><label>35</label></li>
-                            <li><input type="radio" value="36"><label>36</label></li>
-                            <li><input type="radio" value="37"><label>37</label></li>
-                            <li><input type="radio" value="38"><label>38</label></li>
-                            <li><input type="radio" value="39"><label>39</label></li>
-                            <li><input type="radio" value="40"><label>40</label></li>
-                            <li><input type="radio" value="41"><label>41</label></li>
-                        </ul>
-                    </aside>
-                    <aside>
-                        <h4>talle</h4>
-                        <ul class="category">
-                            <li><input type="radio" value="35"><label>35</label></li>
-                            <li><input type="radio" value="36"><label>36</label></li>
-                            <li><input type="radio" value="37"><label>37</label></li>
-                            <li><input type="radio" value="38"><label>38</label></li>
-                            <li><input type="radio" value="39"><label>39</label></li>
-                            <li><input type="radio" value="40"><label>40</label></li>
-                            <li><input type="radio" value="41"><label>41</label></li>
-                        </ul>
-                    </aside>
-                </div>
-            </div>
-            <div class="shop__right">
+            <div class="shop__wrap flex">
+                <div class="left">
+                    <p>Filtrar por</p>
+                    <div class="sidebar">
+                        <aside>
 
+                            <button class="collapsible">Talle</button>
+                            <div class="content">
+                                <ul class="category">
+                                    <li><input type="radio" value="35"><label>35</label></li>
+                                    <li><input type="radio" value="36"><label>36</label></li>
+                                    <li><input type="radio" value="37"><label>37</label></li>
+                                    <li><input type="radio" value="38"><label>38</label></li>
+                                    <li><input type="radio" value="39"><label>39</label></li>
+                                    <li><input type="radio" value="40"><label>40</label></li>
+                                    <li><input type="radio" value="41"><label>41</label></li>
+                                </ul>
+                            </div>
+
+                            <button class="collapsible">color</button>
+                            <div class="content">
+                                <ul class="category">
+                                    <li><input type="radio" value="35"><label>amarillo</label></li>
+                                    <li><input type="radio" value="36"><label>blanco</label></li>
+                                    <li><input type="radio" value="37"><label>hueso</label></li>
+                                    <li><input type="radio" value="38"><label>marrón</label></li>
+                                    <li><input type="radio" value="39"><label>negro</label></li>
+                                    <li><input type="radio" value="40"><label>nude</label></li>
+                                    <li><input type="radio" value="41"><label>rojo</label></li>
+                                    <li><input type="radio" value="41"><label>Suela</label></li>
+                                    <li><input type="radio" value="41"><label>vision</label></li>
+                                </ul>
+                            </div>
+
+                            <button class="collapsible">precio</button>
+                            <div class="content">
+                                <ul class="category">
+                                    <li><input type="radio" value="primaveraVerano"><label>$2.000 - $3.000</label></li>
+                                    <li><input type="radio" value="otonoInverno"><label>$3.000 - $4.000</label></li>
+                                </ul>
+                            </div>
+
+                            <button class="collapsible">temporada</button>
+                            <div class="content">
+                                <ul class="category">
+                                    <li><input type="radio" value="primaveraVerano"><label>primavera - verano</label></li>
+                                    <li><input type="radio" value="otonoInverno"><label>otoño - inverno</label></li>
+                                </ul>
+                            </div>
+                            
+                            <button class="collapsible">material</button>
+                            <div class="content">
+                                <ul class="category">
+                                    <li><input type="radio" value="35"><label>cuero</label></li>
+                                    <li><input type="radio" value="36"><label>lona</label></li>
+                                    <li><input type="radio" value="36"><label>tela</label></li>
+                                    <li><input type="radio" value="36"><label>gamuza</label></li>
+                                    <li><input type="radio" value="36"><label>políester</label></li>
+                                </ul>
+                            </div>
+                            
+                        </aside>
+                    </div>
+                </div>
+                <div class="right">
+
+                </div>
             </div>
         </section>
     </main>
+
+    <!-- Script -->
+    <script src="/app/js/script.js"></script>
 </body>
 
 </html>

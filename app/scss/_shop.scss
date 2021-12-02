@@ -1,7 +1,8 @@
 .shop {
-
     &__breadcrumb {
         border-bottom: 1px solid $ligthGray;
+        width: 100%;
+        margin-bottom: 50px;
 
         ul {
             list-style: none;
@@ -31,57 +32,115 @@
         } 
     }
 
-    &__left {
-
-        p {
-            color: $black;
-            font-weight: normal;
-            font-size: $font-14;
-            text-transform: uppercase;
-        }
-
-        .sidebar {
-           
-            aside {
-                border-top: 1px solid $ligthGray;
-                width: 270px;
-
-                h4 {
-                    color: $black;
-                    font-weight: normal;
-                    font-size: $font-14; 
-                    text-transform: capitalize;
-                   }
+    &__wrap {
+        flex-direction: row;
+        display: flex;
+        height: 100vh;
+        
+        .left {
+            width: 379px;
+            flex-grow: 2;
+    
+            p {
+                color: $black;
+                font-weight: normal;
+                font-size: $font-14;
+                text-transform: uppercase;
             }
-            ul {
-                list-style: none;
-                padding: 0;
+    
+            .sidebar {
+               
+                aside {
+                    border-top: 1px solid $ligthGray;
+                    border-bottom: 1px solid $ligthGray;
 
-                li {
-                    :not(:last-child) {
-                        margin-bottom: 20px;
+                    .collapsible {
+                        background-color: $white;
+                        cursor: pointer;
+                        padding: 18px 18px 18px 0px;
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        color: $black;
+                        font-weight: normal;
+                        font-size: $font-14; 
+                        text-transform: capitalize;
+                        text-align: left;
+                        border-top: 1px solid $ligthGray;
+                      }
+                      
+                      .collapsible:after {
+                        content: '';
+                        background-image: url('/images/icons/mas.svg');
+                        width: 16px;
+                        height: 16px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        margin-right: 5px;
+                        float: right;
+                      }
+                      
+                      .active:after {
+                        content: '';
+                        background-image: url('/images/icons/menos.svg');
+                        width: 16px;
+                        height: 16px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        margin-right: 5px;
+                        float: right;
+                      }
+                      
+                      .content {
+                        padding: 0;
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.2s ease-out;
+                        background-color: $white;
+                      }
+                    
+
+    
+                    h4 {
+                        color: $black;
+                        font-weight: normal;
+                        font-size: $font-14; 
+                        text-transform: capitalize;
+                       }
+                }
+                ul {
+                    list-style: none;
+                    padding: 0;
+    
+                    li {
+                        :not(:last-child) {
+                            margin-bottom: 20px;
+                        }
+    
+                        input {
+                            margin: 0;
+                        }
                     }
-
-                    input {
-                        margin: 0;
+        
+                    li > label {
+                        margin-left: 10px;
+                        font-size: $font-14;
+                        color: $gray;
+                        font-weight: normal;
+                        text-transform: capitalize;
                     }
                 }
     
-                li > label {
-                    margin-left: 10px;
-                    font-size: $font-14;
-                    color: $gray;
-                    font-weight: normal;
-                }
+                
             }
-
-            
+    
         }
-
-    }
-
-    &__right {
-
+    
+        .right {
+            flex-grow: 8;
+            width: 100%;
+            background-color: $black;
+        }
     }
 
 
