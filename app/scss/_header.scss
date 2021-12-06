@@ -6,25 +6,40 @@
         height: 40px;
         max-width: 100%;
         p {
+            display: flex;
+            flex-direction: column;
             color: $white;
-            font-size: $font-15;
+            font-size: $font-12;
             font-weight: 600;
             margin: 0;
             padding: 0;
-            
-            &::first-letter {
-                text-transform: uppercase;
-            }
+            text-align: center;
+            text-transform: capitalize;
 
             > span {
                 font-weight: normal;
+                
             }
+
+            @include breakpoints-up(large) {
+                display: block;
+                font-size: $font-15;
+            }
+
+            
         }
     }
 
     nav {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding: 0 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        @include breakpoints-up(large) {
+            padding: 20px 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
     }
 
     &__logo {
@@ -34,7 +49,7 @@
 
     &__links {
         display: flex;
-        justify-content: end;        
+        justify-content: end;
 
         ul {
             list-style: none;
@@ -44,15 +59,14 @@
 
         ul > li {
             display: inline-block;
-            
+
             &:not(:last-child) {
                 margin-right: 32px;
             }
 
-            &:hover >.sub-menu{
+            &:hover > .sub-menu {
                 display: block;
-              }
-
+            }
         }
 
         a {
@@ -64,14 +78,13 @@
             letter-spacing: 1.4px;
             transition: color 200ms ease-in-out;
 
-            &:hover{
+            &:hover {
                 color: $red;
             }
-
         }
 
         .sub-menu {
-            display:none;
+            display: none;
             position: absolute;
             background: #f2f2f2;
             width: 150px;
@@ -88,7 +101,7 @@
                     color: $black;
                     transition: color 200ms ease-in-out;
 
-                    &:hover{
+                    &:hover {
                         color: $red;
                     }
                 }
@@ -97,17 +110,23 @@
     }
 
     &__search {
-        border-bottom: 1px solid $black;
-        padding-bottom: 2px;
-        
-        button  {
-            background-image: url('/images/icons/search.svg');
+        border: none;
+        order: -2;
+
+        @include breakpoints-up(large) {
+            border-bottom: 1px solid $black;
+            padding-bottom: 2px;
+            order: 0;
+        }
+
+        button {
+            background-image: url("/images/icons/search.svg");
             background-color: transparent;
             width: 16px;
             height: 16px;
             border: none;
         }
-        
+
         input {
             border: none;
             width: 131px;
@@ -115,7 +134,6 @@
 
             &::placeholder {
                 text-transform: uppercase;
-                
             }
 
             &:focus {
@@ -126,7 +144,6 @@
                 border: none;
             }
         }
-
     }
 
     &__cta {
@@ -141,25 +158,32 @@
             padding-right: 8px;
             transition: color 200ms ease-in-out;
 
-            &:hover{
+            &:hover {
                 color: $red;
             }
-
-            
         }
-        > span {  
+        > span {
             display: inline-block;
-            background-image: url('/images/icons/bag.svg');
+            background-image: url("/images/icons/bag.svg");
             width: 40px;
-            height: 69px;
+            height: 52px;
             background-size: contain;
             background-repeat: no-repeat;
-        }
 
+            @include breakpoints-up(large) {
+                height: 69px;
+            }
+        }
     }
 
-    &__toggle{
-        > span {
+    &__toggle {
+        order: -2;
+
+        @include breakpoints-up(large) {
+            order: 0;
+        }
+
+        a > span {
             display: block;
             width: 18px;
             height: 2px;
@@ -169,9 +193,5 @@
                 margin-bottom: 5px;
             }
         }
-
-        
     }
-
-
 }

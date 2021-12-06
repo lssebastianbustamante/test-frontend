@@ -1,4 +1,8 @@
-var coll = document.getElementsByClassName("collapsible");
+
+
+
+// Collapse
+let coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -12,3 +16,10 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
+
+let winter = document.getElementById("winter");
+
+winter.addEventListener("mouseover", function() {
+  document.querySelector("h1").style.color = 'blue';
+})
