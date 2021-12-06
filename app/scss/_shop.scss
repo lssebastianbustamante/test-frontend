@@ -1,4 +1,5 @@
 .shop {
+    margin-bottom: 50px;
     &__breadcrumb {
         border-bottom: 1px solid $ligthGray;
         width: 100%;
@@ -7,141 +8,200 @@
         ul {
             list-style: none;
             margin-bottom: 0;
+            padding-left: 0;
 
             li {
                 font-size: $font-11;
                 font-weight: normal;
 
-                h1{
+                h1 {
                     color: $black;
                     font-size: $font-28;
                     font-weight: normal;
                 }
 
-                > span {  
+                > span {
                     display: inline-block;
-                    background-image: url('/images/icons/arrow.svg');
+                    background-image: url("/images/icons/arrow.svg");
                     width: 10px;
                     height: 10px;
                     background-size: contain;
                     background-repeat: no-repeat;
                     margin-right: 5px;
                 }
-
             }
-        } 
+        }
     }
 
     &__wrap {
         flex-direction: row;
         display: flex;
-        height: 100vh;
-        
+
         .left {
-            width: 379px;
-            flex-grow: 2;
-    
+            width: 350px;
+            flex-grow: 1;
+            padding-right: 10px;
+
             p {
                 color: $black;
                 font-weight: normal;
                 font-size: $font-14;
                 text-transform: uppercase;
             }
-    
+
             .sidebar {
-               
                 aside {
                     border-top: 1px solid $ligthGray;
                     border-bottom: 1px solid $ligthGray;
 
-                    .collapsible {
-                        background-color: $white;
-                        cursor: pointer;
-                        padding: 18px 18px 18px 0px;
-                        width: 100%;
-                        border: none;
-                        outline: none;
-                        color: $black;
-                        font-weight: normal;
-                        font-size: $font-14; 
-                        text-transform: capitalize;
-                        text-align: left;
-                        border-top: 1px solid $ligthGray;
-                      }
-                      
-                      .collapsible:after {
-                        content: '';
-                        background-image: url('/images/icons/mas.svg');
-                        width: 16px;
-                        height: 16px;
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        margin-right: 5px;
-                        float: right;
-                      }
-                      
-                      .active:after {
-                        content: '';
-                        background-image: url('/images/icons/menos.svg');
-                        width: 16px;
-                        height: 16px;
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        margin-right: 5px;
-                        float: right;
-                      }
-                      
-                      .content {
+                    ul {
+                        list-style: none;
                         padding: 0;
-                        max-height: 0;
-                        overflow: hidden;
-                        transition: max-height 0.2s ease-out;
-                        background-color: $white;
-                      }
-                    
 
-    
-                    h4 {
-                        color: $black;
-                        font-weight: normal;
-                        font-size: $font-14; 
-                        text-transform: capitalize;
-                       }
+                        li {
+                            :not(:last-child) {
+                                margin-bottom: 20px;
+                            }
+
+                            input {
+                                margin: 0;
+                            }
+                        }
+
+                        li > label {
+                            margin-left: 10px;
+                            font-size: $font-14;
+                            color: $gray;
+                            font-weight: normal;
+                            text-transform: capitalize;
+                        }
+                    }
                 }
-                ul {
+            }
+        }
+
+        .right {
+            flex-grow: 9;
+            width: 100%;
+            margin-left: 40px;
+
+            .product {
+                margin: o auto;
+
+                .product__grid {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    justify-content: center;
+
+                    .btn {
+                        margin-top: 20px;
+                    }
+
+                }
+
+                &__top-sort-by {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding:  0;
+                    margin: 0;
                     list-style: none;
-                    padding: 0;
-    
-                    li {
-                        :not(:last-child) {
-                            margin-bottom: 20px;
+
+                    select {
+                        border: none;
+                        text-transform: capitalize;
+                        font-size: $font-15;
+                        color: $darkGray;
+
+                        &:focus {
+                            outline: none;
                         }
-    
-                        input {
-                            margin: 0;
+
+                        option {
+                            text-transform: capitalize;
                         }
                     }
-        
-                    li > label {
-                        margin-left: 10px;
+
+                    p {
+                        display: inline-block;
+                        color: $darkGray;
+                        text-transform: uppercase;
                         font-size: $font-14;
-                        color: $gray;
-                        font-weight: normal;
-                        text-transform: capitalize;
+                        letter-spacing: 1.3px;
                     }
                 }
-    
+
+                &__item {
+                    width: 32.9%;
+                    height: 515px;
+                    margin: 5px 2px;
+                    
+                }
+
+                &__image {
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 419px;
+                        
+                    }
+                    p {
+                        position: absolute;
+                        top: 0px;
+                        right: 0;
+                        margin: 0;
+                        padding: 5px;
+                        font-size: $font-11;
+                        color: $white;
+                        background-color: $black;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+
+                &__detail {
+                    p {
+                        padding: 0;
+                        margin-left: 0;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+
+                    .title {
+                        text-transform: uppercase;
+                        font-size: $font-14;
+                        margin-top: 2px;
+                        margin-bottom: 15px;
+                    }
+                    .price {
+                        font-size: $font-15;
+                        font-weight: 500;
+                        margin-bottom: 5px;
+
+                        > span {
+                            text-decoration-line: line-through;
+                            font-size: $font-11;
+                            color: $gray;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .cuotas {
+                        font-size: $font-12;
+                        color: $red;
+                        text-transform: capitalize;
+
+                        span {
+                            text-transform: none;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
                 
             }
-    
-        }
-    
-        .right {
-            flex-grow: 8;
-            width: 100%;
-            background-color: $black;
         }
     }
-
-
 }

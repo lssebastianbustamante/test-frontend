@@ -40,3 +40,51 @@
 .fade-out {
     animation: fade-out 300ms ease-in-out  forwards;
 }
+
+// Colapse Sidebar
+
+.collapsible {
+                        
+    background-color: $white;
+    cursor: pointer;
+    padding: 18px 18px 18px 0px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: $black;
+    font-weight: normal;
+    font-size: $font-14; 
+    text-transform: capitalize;
+    text-align: left;
+    border-top: 1px solid $ligthGray;
+
+    &::after {
+        content: '';
+        background-image: url('/images/icons/mas.svg');
+        width: 16px;
+        height: 16px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 5px;
+        float: right;
+      }
+  }
+  
+  .active:after {
+    content: '';
+    background-image: url('/images/icons/menos.svg');
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    float: right;
+  }
+  
+  .content {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: $white;
+  }

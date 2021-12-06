@@ -18,22 +18,27 @@
 </head>
 
 <body>
+
     <main>
+
         <header class="header">
+
             <div class="header__offer flex flex-ai-c flex-jc-c">
-                <p>!Aprovechá la promo! <span>Comprá hasta 12 cuotas sin interés</span></p>
+                <p>!aprovechá la promo! <span>comprá hasta 12 cuotas sin interés</span></p>
             </div>
+
             <nav class="container flex flex-jc-sb flex-ai-c">
-                <!-- <a href="#" class="header__toggle">
+                <a href="#" class="header__toggle hide-for-desktop">
                     <span></span>
                     <span></span>
                     <span></span>
-                </a> -->
+                </a>
                 <div class="header__logo">
                     <img src="/images/img/logo-descktop.svg" alt="">
                 </div>
+
                 <div class="header__links">
-                    <ul>
+                    <ul class="hide-for-mobile">
                         <li><a href="#">shop</a>
                             <ul class="sub-menu">
                                 <li><a href="#">pantalos</a></li>
@@ -46,33 +51,41 @@
                         <li><a href="#">editoriales</a></li>
                     </ul>
                 </div>
+
                 <div class="header__search">
                     <input type="text" placeholder="buscar">
                     <button type="submit"></button>
                 </div>
+
                 <div class="header__cta">
-                    <a href="#">ingresar</a>
-                    <a href="#">carrito </a>
+                    <a href="#" class="hide-for-mobile">ingresar</a>
+                    <a href="#" class="hide-for-mobile">carrito </a>
                     <span></span>
                 </div>
+
             </nav>
+
         </header>
 
         <section class="shop container">
+
             <div class="shop__breadcrumb flex-ai-c">
                 <ul>
-                    <li><span></span>Invierno 20202</li>
+                    <li><span></span>Invierno 2022</li>
                     <li>
                         <h1>Titulo de categoria</h1>
                     </li>
                 </ul>
             </div>
-            <div class="shop__wrap flex">
-                <div class="left">
-                    <p>Filtrar por</p>
-                    <div class="sidebar">
-                        <aside>
 
+            <div class="shop__wrap flex">
+
+                <div class="left hide-for-mobile">
+                    <p>Filtrar por</p>
+
+                    <div class="sidebar">
+
+                        <aside>
                             <button class="collapsible">Talle</button>
                             <div class="content">
                                 <ul class="category">
@@ -112,11 +125,12 @@
                             <button class="collapsible">temporada</button>
                             <div class="content">
                                 <ul class="category">
-                                    <li><input type="radio" value="primaveraVerano"><label>primavera - verano</label></li>
+                                    <li><input type="radio" value="primaveraVerano"><label>primavera - verano</label>
+                                    </li>
                                     <li><input type="radio" value="otonoInverno"><label>otoño - inverno</label></li>
                                 </ul>
                             </div>
-                            
+
                             <button class="collapsible">material</button>
                             <div class="content">
                                 <ul class="category">
@@ -127,15 +141,124 @@
                                     <li><input type="radio" value="36"><label>políester</label></li>
                                 </ul>
                             </div>
-                            
+
                         </aside>
                     </div>
                 </div>
                 <div class="right">
+                    <div class="product">
+                        <div class="product__grid">
+                            <ul class="product__top-sort-by">
+                                <li>
+                                    <p>6 productos</p>
+                                </li>
+                                <li>
+
+                                    <form action="">
+                                        <p>ordenar por:</p>
+                                        <select name="sorting">
+                                            <option value="relevancia">relevancia</option>
+                                            <option value="mayorPrecio">mayor precio</option>
+                                            <option value="menorPrecio">menor precio</option>
+                                            <option value="aZ">a - z</option>
+                                            <option value="zA">z - a</option>
+                                        </select>
+                                    </form>
+                                </li>
+                            </ul>
+                            <div class="product__item">
+                                <div class="product__image">
+                                    <img src="/images/img/img.png" alt="">
+                                    <p>-50 off</p>
+                                </div>
+                                <div class="product__detail">
+                                    <p class="title">Lorem ipsum dolor sit amet</p>
+                                    <p class="price">$5.899,00</p>
+                                    <p class="cuotas">hasta <span>12 cuotas</span></p>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="product__image">
+                                    <img src="/images/img/img.png" alt="">
+                                </div>
+                                <div class="product__detail">
+                                    <p class="title">Lorem ipsum dolor sit amet</p>
+                                    <p class="price"><span>$5.899,00</span>$5.899,00</p>
+                                    <p class="cuotas">hasta <span>12 cuotas</span></p>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="product__image">
+                                    <img src="/images/img/img.png" alt="">
+                                    <p>-50 off</p>
+                                </div>
+                                <div class="product__detail">
+                                    <p class="title">Lorem ipsum dolor sit amet</p>
+                                    <p class="price"><span>$5.899,00</span>$5.899,00</p>
+                                    <p class="cuotas">hasta <span>12 cuotas</span></p>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="product__image">
+                                    <img src="/images/img/img.png" alt="">
+                                    <p>nuevo</p>
+                                </div>
+                                <div class="product__detail">
+                                    <p class="title">Lorem ipsum dolor sit amet</p>
+                                    <p class="price"><span>$5.899,00</span>$5.899,00</p>
+                                    <p class="cuotas">hasta <span>12 cuotas</span></p>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="product__image">
+                                    <img src="/images/img/img.png" alt="">
+                                    <p>-50 off</p>
+                                </div>
+                                <div class="product__detail">
+                                    <p class="title">Lorem ipsum dolor sit amet</p>
+                                    <p class="price"><span>$5.899,00</span>$5.899,00</p>
+                                    <p class="cuotas">hasta <span>12 cuotas</span></p>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="product__image">
+                                    <img src="/images/img/img.png" alt="">
+                                </div>
+                                <div class="product__detail">
+                                    <p class="title">Lorem ipsum dolor sit amet</p>
+                                    <p class="price"><span>$5.899,00</span>$5.899,00</p>
+                                    <p class="cuotas">hasta <span>12 cuotas</span></p>
+                                </div>
+                            </div>
+                            <a class="btn" href="">Ver más productos</a>
+                        </div>
+
+                    </div>
 
                 </div>
+
             </div>
+
         </section>
+        <footer class="footer flex flex-jc-c flex-ai-c">
+            <div class="footer__link">
+                <ul>
+                    <li><a href="#">cambios y devoluciones</a></li>
+                    <li><a href="#">envios</a></li>
+                    <li><a href="#">medios de pago</a></li>
+                    <li><a href="#">preguntas frecuentes</a></li>
+                    <li><a href="#">venta mayorista</a></li>
+                </ul>
+            </div>
+            <div class="footer__form">
+                <h3>news</h3>
+                <p>suscribite y entérate de las promos!</p>
+                <form action="post">
+                    <input type="text" placeholder="Escribí tu Mail">
+                    <a href="" class="btn">suscribete</a>
+                </form>
+            </div>
+        </footer>
     </main>
 
     <!-- Script -->
