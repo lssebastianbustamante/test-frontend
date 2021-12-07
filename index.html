@@ -23,13 +23,15 @@
 
         <header class="header">
 
-            <div class="header__offer flex flex-ai-c flex-jc-c">
-                <p>!aprovechá la promo! <span>comprá hasta 12 cuotas sin interés</span></p>
+            <div class="header__offer flex flex-jc-c flex-ai-c">
+                <p>!Aprovechá la promo! <span>Comprá hasta 12 cuotas sin interés</span></p>
+                <div class="close-btn hide-for-desktop"></div>
             </div>
 
             <nav class="container flex flex-jc-sb flex-ai-c">
-                <div class="header__toggle hide-for-desktop">
-                    <a href="#" >
+                <!-- Menu Mobile -->
+                <div class="header__toggle hide-for-desktop"> 
+                    <a href="#">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -74,7 +76,9 @@
 
             <div class="shop__breadcrumb flex-ai-c">
                 <ul>
-                    <li><p><span></span> Invierno 2022</p></li>
+                    <li>
+                        <p><span></span> Invierno 2022</p>
+                    </li>
                     <li>
                         <h1>Titulo de categoria</h1>
                     </li>
@@ -151,13 +155,16 @@
                 <div class="right">
                     <div class="product">
                         <div class="product__grid">
+                            <div class="product__sort-mobile flex flex-ai-c hide-for-desktop">
+                                <a href="">filtrá por <span><img src="/images/icons/mas.svg" alt=""></span></a>
+                                <a href="">ordena por <span><img src="/images/icons/sort-arrow.svg" alt=""></span></a>
+                            </div>
                             <ul class="product__top-sort-by">
                                 <li>
                                     <p>6 productos</p>
                                 </li>
                                 <li>
-
-                                    <form action="">
+                                    <form action="" class="hide-for-mobile">
                                         <p>ordenar por:</p>
                                         <select name="sorting">
                                             <option value="relevancia">relevancia</option>

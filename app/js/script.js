@@ -17,9 +17,9 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-
+// Color categoria
 let winter = document.getElementById("winter");
 
 winter.addEventListener("mouseover", function() {
-  document.querySelector("h1").style.color = 'blue';
+  document.querySelector("h1").classList.toggle('colorOvermouse')
 })

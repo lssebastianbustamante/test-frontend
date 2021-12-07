@@ -1,6 +1,7 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
+    
 }
 
 *, *::before, *::after {
@@ -70,4 +71,8 @@ a {
   @include breakpoints-up(large){
     display: none;
   }
+}
+
+.colorOvermouse {
+  color: $red !important;
 }
