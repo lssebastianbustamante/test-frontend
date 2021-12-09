@@ -48,10 +48,10 @@ for (let i = 0; i < coll3.length; i++) {
     element.classList.toggle('active');
   })
 }
-
+// Cargar grilla
 let verMas = document.querySelector('#verMas');
-let arr = []
 let arr2 = []
+
 verMas.addEventListener('click', () => {
   fetch('../../public/json/products.json')
   .then(response => response.json())
@@ -59,7 +59,9 @@ verMas.addEventListener('click', () => {
 
   let images = document.querySelectorAll('.theImage')
   for (let x = 0; x < images.length; x++) {
-      images[x].src= arr2[0]
+    for (let i = 0; i < arr2.length; i++) {
+        images[i].src=arr2[i]
+    }
   }
 
   
