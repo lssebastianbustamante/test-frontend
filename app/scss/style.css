@@ -15,7 +15,7 @@
 
 .collapsible::after {
   content: '';
-  background-image: url("/images/icons/mas.svg");
+  background-image: url("../../images/icons/mas.svg");
   width: 16px;
   height: 16px;
   background-size: contain;
@@ -26,7 +26,7 @@
 
 .active:after {
   content: '';
-  background-image: url("/images/icons/menos.svg");
+  background-image: url("../../images/icons/menos.svg");
   width: 16px;
   height: 16px;
   background-size: contain;
@@ -299,7 +299,7 @@ a {
 }
 
 .header__search button {
-  background-image: url("/images/icons/search.svg");
+  background-image: url("../../images/icons/search.svg");
   background-color: transparent;
   width: 16px;
   height: 16px;
@@ -361,7 +361,7 @@ a {
 
 .header__cta > span {
   display: inline-block;
-  background-image: url("/images/icons/bag.svg");
+  background-image: url("../../images/icons/bag.svg");
   width: 40px;
   height: 52px;
   background-size: contain;
@@ -430,7 +430,7 @@ a {
 
 .shop__breadcrumb ul li p span {
   display: inline-block;
-  background-image: url("/images/icons/arrow.svg");
+  background-image: url("../../images/icons/arrow.svg");
   width: 15px;
   height: 15px;
   background-size: contain;
@@ -610,7 +610,7 @@ a {
 .shop__wrap .right .product__sort-mobile .overlay a::after {
   position: absolute;
   content: "";
-  background-image: url("/images/icons/close-mobile.svg");
+  background-image: url("../../images/icons/close-mobile.svg");
   color: black;
   font-size: 70px;
   float: right;

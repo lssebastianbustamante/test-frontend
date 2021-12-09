@@ -17,7 +17,7 @@
 
     &::after {
         content: '';
-        background-image: url('/images/icons/mas.svg');
+        background-image: url('../../images/icons/mas.svg');
         width: 16px;
         height: 16px;
         background-size: contain;
@@ -29,7 +29,7 @@
   
   .active:after {
     content: '';
-    background-image: url('/images/icons/menos.svg');
+    background-image: url('../../images/icons/menos.svg');
     width: 16px;
     height: 16px;
     background-size: contain;

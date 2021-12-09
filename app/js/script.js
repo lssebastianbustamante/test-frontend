@@ -1,6 +1,7 @@
 // Collapse
 let coll = document.querySelectorAll(".collapsible");
 
+
 coll.forEach(element => {
   element.addEventListener('click', () => {
     element.classList.toggle('active');
@@ -49,11 +50,30 @@ for (let i = 0; i < coll3.length; i++) {
   })
 }
 // Cargar grilla
+function readTextFile(file, callback) {
+  var rawFile = new XMLHttpRequest();
+  rawFile.overrideMimeType("application/json");
+  rawFile.open("GET", file, true);
+  rawFile.onreadystatechange = function () {
+    if (rawFile.readyState === 4 && rawFile.status == "200") {
+      callback(rawFile.responseText);
+    }
+  }
+  rawFile.send(null);
+}
+
+//usage:
+readTextFile("/Desktop/test-frontend/app/json", function (text) {
+  var data = JSON.parse(text);
+  console.log(data);
+});
+
+
 let verMas = document.querySelector('#verMas');
 let arr2 = []
 
 verMas.addEventListener('click', () => {
-  fetch('../../public/json/products.json')
+  fetch('./app/json/products.json')
     .then(response => response.json())
     .then(data => data.products.map(element => {
       arr2.push(element)
@@ -61,16 +81,12 @@ verMas.addEventListener('click', () => {
       for (let x = 0; x < items.length; x++) {
         for (let i = 0; i < arr2.length; i++) {
           items[i].firstElementChild.firstElementChild.src = arr2[i].imageSrc;
-          items[i].childNodes[3].childNodes[1].innerHTML =  arr2[i].name;
+          items[i].childNodes[3].childNodes[1].innerHTML = arr2[i].name;
           items[i].childNodes[3].childNodes[3].firstElementChild.innerHTML = "$ "
           items[i].childNodes[3].childNodes[3].childNodes[0].innerText = "$ " + arr2[i].bestPrice;
-          items[i].childNodes[3].childNodes[5].childNodes[1].innerText = arr2[i].fees + " cuotas"; 
+          items[i].childNodes[3].childNodes[5].childNodes[1].innerText = arr2[i].fees + " cuotas";
         }
       }
 
     }))
-
-
-
-
 })
