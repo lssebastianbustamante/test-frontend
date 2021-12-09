@@ -201,7 +201,7 @@
                             margin: 0 auto;
                             p {
                                 margin: 0;
-                                margin-left: 26px;
+                                margin-left: 18px;
                                 font-size: $font-28;
                                 font-weight: 300;
                                 &::first-letter {
@@ -220,7 +220,7 @@
                                 border-bottom: 1px solid $ligthGray;
                                 p {
                                     font-size: $font-15;
-                                    margin-left: 9px;
+                                    margin-left: 0;
                                 }
     
                                 ul {
@@ -271,7 +271,7 @@
 
                                 p {
                                     font-size: $font-15;
-                                    margin-left: 9px;
+                                    margin-left: 0;
                                 }
     
                                 ul {
@@ -321,7 +321,7 @@
                                 flex-direction: column;
                                 p {
                                     font-size: $font-15;
-                                    margin-left: 9px;
+                                    margin-left: 0;
                                 }
     
                                 ul {

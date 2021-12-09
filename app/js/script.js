@@ -15,7 +15,7 @@ let itemGrid = document.querySelectorAll('.product__item')
 
 ingresar.addEventListener('click', () => {
   itemGrid.forEach(item => {
-    item.classList.toggle('has-fade')
+    item.classList.toggle('has-fade');
   });
 });
 
@@ -54,15 +54,23 @@ let arr2 = []
 
 verMas.addEventListener('click', () => {
   fetch('../../public/json/products.json')
-  .then(response => response.json())
-  .then(data => data.products.map( element => arr2.push(element.imageSrc)))
+    .then(response => response.json())
+    .then(data => data.products.map(element => {
+      arr2.push(element)
+      let items = document.querySelectorAll('.product__item')
+      for (let x = 0; x < items.length; x++) {
+        for (let i = 0; i < arr2.length; i++) {
+          items[i].firstElementChild.firstElementChild.src = arr2[i].imageSrc;
+          items[i].childNodes[3].childNodes[1].innerHTML =  arr2[i].name;
+          items[i].childNodes[3].childNodes[3].firstElementChild.innerHTML = "$ "
+          items[i].childNodes[3].childNodes[3].childNodes[0].innerText = "$ " + arr2[i].bestPrice;
+          items[i].childNodes[3].childNodes[5].childNodes[1].innerText = arr2[i].fees + " cuotas"; 
+        }
+      }
 
-  let images = document.querySelectorAll('.theImage')
-  for (let x = 0; x < images.length; x++) {
-    for (let i = 0; i < arr2.length; i++) {
-        images[i].src=arr2[i]
-    }
-  }
+    }))
 
-  
+
+
+
 })

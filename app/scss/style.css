@@ -44,8 +44,8 @@
   background-color: white;
 }
 
-#myNav {
-  width: 100%;
+.has-fade {
+  visibility: hidden;
 }
 
 html {
@@ -102,7 +102,6 @@ a {
 .btn {
   display: block;
   width: 178px;
-  height: 40px;
   background-color: black;
   color: white;
   text-align: center;
@@ -111,6 +110,18 @@ a {
   line-height: 40px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.btn-white {
+  width: 121px;
+  height: 55px;
+  background-color: white;
+  color: black;
+  font-size: 0.875rem;
+  line-height: 40px;
+  border-radius: 5px;
+  margin-top: 65px !important;
+  text-transform: capitalize;
 }
 
 @media (max-width: 63.9375em) {
@@ -619,7 +630,7 @@ a {
 
 .shop__wrap .right .product__sort-mobile .overlay__content p {
   margin: 0;
-  margin-left: 26px;
+  margin-left: 18px;
   font-size: 1.75rem;
   font-weight: 300;
 }
@@ -647,7 +658,7 @@ a {
 
 .shop__wrap .right .product__sort-mobile .overlay .swatches .size p {
   font-size: 0.9375rem;
-  margin-left: 9px;
+  margin-left: 0;
 }
 
 .shop__wrap .right .product__sort-mobile .overlay .swatches .size ul {
@@ -696,7 +707,7 @@ a {
 
 .shop__wrap .right .product__sort-mobile .overlay .swatches .color p {
   font-size: 0.9375rem;
-  margin-left: 9px;
+  margin-left: 0;
 }
 
 .shop__wrap .right .product__sort-mobile .overlay .swatches .color ul {
@@ -749,7 +760,7 @@ a {
 
 .shop__wrap .right .product__sort-mobile .overlay .swatches .precio p {
   font-size: 0.9375rem;
-  margin-left: 9px;
+  margin-left: 0;
 }
 
 .shop__wrap .right .product__sort-mobile .overlay .swatches .precio ul {
