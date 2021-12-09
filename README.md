@@ -4,4 +4,4 @@
 
 Instalar la extencion Live Server en tu VisualStudio Code
 
-Hacer click en "Go Live";
+Hacer click en "Go Live"
