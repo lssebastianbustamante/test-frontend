@@ -164,6 +164,209 @@
     
                         }
                     }
+
+                    .overlay {
+                        height: 100%;
+                        width: 0;
+                        position: fixed;
+                        z-index: 1;
+                        top: 0;
+                        left: 0;
+                        background-color: $white;
+                        overflow-x: hidden;
+                        transition: 0.5s;
+
+                        a {
+                            &::after {
+                                position: absolute;
+                                content: "";
+                                background-image: url("/images/icons/close-mobile.svg");
+                                color: $black;
+                                font-size: 70px;
+                                float: right;
+                                margin-left: 5px;
+                                float: right;
+                                top: 26px;
+                                right: 10px;
+                                border: none !important;
+                                width: 40px;
+                                height: 40px;
+                                background-repeat: no-repeat;
+                            }
+
+                            border: none !important;
+                        }
+
+                        &__content {
+                            margin: 0 auto;
+                            p {
+                                margin: 0;
+                                margin-left: 26px;
+                                font-size: $font-28;
+                                font-weight: 300;
+                                &::first-letter {
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+                        .swatches {
+                           
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: 20px;
+                            padding: 0 20px;
+                            .size {
+                                width: 100%;
+                                border-bottom: 1px solid $ligthGray;
+                                p {
+                                    font-size: $font-15;
+                                    margin-left: 9px;
+                                }
+    
+                                ul {
+                                    
+                                    list-style: none;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    padding: 0;
+                                    margin-left: 9px;
+
+                                    li {
+                                        margin-bottom: 18px;
+                                        width: 20%;
+                                        
+                                    
+                                       > input {
+                                            display: none;
+                                            outline: $black;
+
+                                        }
+    
+                                        >  label {
+                                            border-radius: 50%;
+                                            cursor: pointer;
+                                            border: 1px solid $gray;
+                                            color: $darkGray;
+                                            
+                                            display: block;
+                                            height: 55px;
+                                            width: 55px;
+                                            padding-top: 18px;
+                                            text-align: center;
+                                            &:hover{
+                                                font-weight: 600 !important;
+                                                border: 2px solid $darkGray !important;
+                                            }                                            
+                                        }
+
+                                        
+                                    }
+                                }
+                            }
+
+                            .color {
+                                width: 100%;
+                                border-bottom: 1px solid $ligthGray;
+                                margin-top: 10px;
+
+                                p {
+                                    font-size: $font-15;
+                                    margin-left: 9px;
+                                }
+    
+                                ul {
+                                    
+                                    list-style: none;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    padding: 0;
+                                    margin-left: 9px;
+
+                                    li {
+                                        margin-bottom: 18px;
+                                        width: 20%;
+                                        
+                                    
+                                       > input {
+                                            display: none;
+                                            outline: $black;
+
+                                        }
+    
+                                        >  label {
+                                            cursor: pointer;
+                                            border: 1px solid $gray;
+                                            color: $darkGray;
+                                            background-color: $bgGray;
+                                            display: block;
+                                            height: 77px;
+                                            width: 53px;
+                                            padding-top: 18px;
+                                            text-align: center;    
+                                            &:hover {
+                                                font-weight: 600 !important;
+                                                border: 2px solid $red !important;
+                                            }                                        
+                                        }
+
+                                        
+                                    }
+                                }
+                            }
+
+                            .precio {
+                                width: 100%;
+                                border-bottom: 1px solid $ligthGray;
+                                margin-top: 10px;
+                                flex-direction: column;
+                                p {
+                                    font-size: $font-15;
+                                    margin-left: 9px;
+                                }
+    
+                                ul {
+                                    
+                                    list-style: none;
+                                    display: flex;
+                                    flex-direction: row;
+                                    padding: 0;
+                               
+
+                                    li {
+                                        margin-bottom: 18px;
+                                        width: 20%;
+                                        
+                                    
+                                       > input {
+                                            display: none;
+                                            outline: $black;
+                                            position: relative;
+                                        }
+    
+                                        >  label {
+                                            position: absolute;
+                                            border-radius: 50%;
+                                            cursor: pointer;
+                                            border: 1px solid $gray;
+                                            color: $darkGray;
+                                            background-color: $bgGray;
+                                            display: block;
+                                            height: 22px;
+                                            width: 22px;
+                                            
+                                            text-align: center;    
+                                            &:hover {
+                                                font-weight: 600 !important;
+                                                border: 2px solid $red !important;
+                                            }                                        
+                                        }
+
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
 
                 &__top-sort-by {
@@ -289,3 +492,5 @@
         }
     }
 }
+
+

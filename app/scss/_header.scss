@@ -69,17 +69,17 @@
             list-style: none;
             margin: 0;
             padding: 0;
-        }
 
-        ul > li {
-            display: inline-block;
-
-            &:not(:last-child) {
-                margin-right: 32px;
-            }
-
-            &:hover > .sub-menu {
-                display: block;
+            >  li {
+                display: inline-block;
+    
+                &:not(:last-child) {
+                    margin-right: 32px;
+                }
+    
+                &:hover > .sub-menu {
+                    display: block;
+                }
             }
         }
 

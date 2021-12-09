@@ -30,7 +30,7 @@
 
             <nav class="container flex flex-jc-sb flex-ai-c">
                 <!-- Menu Mobile -->
-                <div class="header__toggle hide-for-desktop"> 
+                <div class="header__toggle hide-for-desktop">
                     <a href="#">
                         <span></span>
                         <span></span>
@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="header__cta">
-                    <a href="#" class="hide-for-mobile">ingresar</a>
+                    <a href="#" id="login" class="hide-for-mobile">ingresar</a>
                     <a href="#" class="hide-for-mobile">carrito </a>
                     <span></span>
                 </div>
@@ -124,8 +124,8 @@
                             <button class="collapsible">precio</button>
                             <div class="content">
                                 <ul class="category">
-                                    <li><input type="radio" value="primaveraVerano"><label>$2.000 - $3.000</label></li>
-                                    <li><input type="radio" value="otonoInverno"><label>$3.000 - $4.000</label></li>
+                                    <li><input type="radio" value=""><label>$2.000 - $3.000</label></li>
+                                    <li><input type="radio" value=""><label>$3.000 - $4.000</label></li>
                                 </ul>
                             </div>
 
@@ -156,8 +156,53 @@
                     <div class="product">
                         <div class="product__grid">
                             <div class="product__sort-mobile flex flex-ai-c hide-for-desktop">
-                                <a href="">filtrá por <span><img src="/images/icons/mas.svg" alt=""></span></a>
+                                <a href="#" id="sort-button">filtrá por <span><img src="/images/icons/mas.svg"
+                                            alt=""></span></a>
                                 <a href="">ordena por <span><img src="/images/icons/sort-arrow.svg" alt=""></span></a>
+                                <div id="myNav" class="overlay">
+                                    <a href="#" id="closebtn"></a>
+                                    <div class="overlay__content">
+                                        <p>filtrá por:</p>
+                                        <div class="swatches">
+
+                                           <form action="">
+                                            <div class="size">
+                                                <p>Talle:</p>
+                                                <ul>
+                                                    <li><input type="radio" value="36"><label>36</label></li>
+                                                    <li><input type="radio" value="37"><label>37</label></li>
+                                                    <li><input type="radio" value="38"><label>38</label></li>
+                                                    <li><input type="radio" value="39"><label>39</label></li>
+                                                    <li><input type="radio" value="40"><label>40</label></li>
+                                                    <li><input type="radio" value="41"><label>41</label></li>
+                                                    <li><input type="radio" value="42"><label>42</label></li>
+                                                    <li><input type="radio" value="43"><label>43</label></li>
+                                                </ul>
+                                            </div>
+                                            <div class="color">
+                                                <p>Talle:</p>
+                                                <ul>
+                                                    <li><input type="radio" value="a"><label></label></li>
+                                                    <li><input type="radio" value="b"><label></label></li>
+                                                    <li><input type="radio" value="c"><label></label></li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="precio">
+                                                <p>Precio:</p>
+                                                <ul>
+                                                    <li><input type="radio" value="primaveraVerano"><label>$2.000 -
+                                                            $3.000</label></li>
+                                                    <li><input type="radio" value="otonoInverno"><label>$3.000 -
+                                                            $4.000</label></li>
+                                                </ul>
+                                            </div>
+                                           </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
                             <ul class="product__top-sort-by">
                                 <li>
@@ -178,7 +223,7 @@
                             </ul>
                             <div class="product__item">
                                 <div class="product__image">
-                                    <img src="/images/img/img.png" alt="">
+                                    <img class="theImage" src="/images/img/img.png" alt="">
                                     <p>-50 off</p>
                                 </div>
                                 <div class="product__detail">
@@ -189,7 +234,7 @@
                             </div>
                             <div class="product__item">
                                 <div class="product__image">
-                                    <img src="/images/img/img.png" alt="">
+                                    <img class="theImage" src="/images/img/img.png" alt="">
                                 </div>
                                 <div class="product__detail">
                                     <p class="title">Lorem ipsum dolor sit amet</p>
@@ -199,7 +244,7 @@
                             </div>
                             <div class="product__item">
                                 <div class="product__image">
-                                    <img src="/images/img/img.png" alt="">
+                                    <img class="theImage" src="/images/img/img.png" alt="">
                                     <p>-50 off</p>
                                 </div>
                                 <div class="product__detail">
@@ -210,7 +255,7 @@
                             </div>
                             <div class="product__item">
                                 <div class="product__image">
-                                    <img src="/images/img/img.png" alt="">
+                                    <img class="theImage" src="/images/img/img.png" alt="">
                                     <p>nuevo</p>
                                 </div>
                                 <div class="product__detail">
@@ -221,7 +266,7 @@
                             </div>
                             <div class="product__item">
                                 <div class="product__image">
-                                    <img src="/images/img/img.png" alt="">
+                                    <img class="theImage" src="/images/img/img.png" alt="">
                                     <p>-50 off</p>
                                 </div>
                                 <div class="product__detail">
@@ -232,7 +277,7 @@
                             </div>
                             <div class="product__item">
                                 <div class="product__image">
-                                    <img src="/images/img/img.png" alt="">
+                                    <img class="theImage" src="/images/img/img.png" alt="">
                                 </div>
                                 <div class="product__detail">
                                     <p class="title">Lorem ipsum dolor sit amet</p>
@@ -240,7 +285,9 @@
                                     <p class="cuotas">hasta <span>12 cuotas</span></p>
                                 </div>
                             </div>
-                            <a class="btn" href="">Ver más productos</a>
+                            <!-- <a id="verMas" class="btn" href="">Ver más productos</a> -->
+
+                            <button id="verMas" class="btn">Ver más productos</button>
                         </div>
 
                     </div>
