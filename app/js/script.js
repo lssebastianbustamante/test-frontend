@@ -64,7 +64,6 @@ verMas.addEventListener('click', () => {
         for (let i = 0; i < arr2.length; i++) {
           items[i].firstElementChild.firstElementChild.src = arr2[i].imageSrc;
           items[i].childNodes[3].childNodes[1].innerHTML = arr2[i].name;
-
           items[i].childNodes[3].childNodes[3].childNodes[1].innerText = "$ " + arr2[i].bestPrice;
           items[i].childNodes[3].childNodes[3].childNodes[3].innerText = "$ " + arr2[i].listPrice;
           items[i].childNodes[3].childNodes[5].childNodes[1].innerText = arr2[i].fees + " cuotas";
