@@ -50,24 +50,6 @@ for (let i = 0; i < coll3.length; i++) {
   })
 }
 // Cargar grilla
-function readTextFile(file, callback) {
-  var rawFile = new XMLHttpRequest();
-  rawFile.overrideMimeType("application/json");
-  rawFile.open("GET", file, true);
-  rawFile.onreadystatechange = function () {
-    if (rawFile.readyState === 4 && rawFile.status == "200") {
-      callback(rawFile.responseText);
-    }
-  }
-  rawFile.send(null);
-}
-
-//usage:
-readTextFile("/Desktop/test-frontend/app/json", function (text) {
-  var data = JSON.parse(text);
-  console.log(data);
-});
-
 
 let verMas = document.querySelector('#verMas');
 let arr2 = []
