@@ -1,11 +1,7 @@
 .shop {
     margin-bottom: 50px;
-    
 
     &__breadcrumb {
-
-
-        
         width: 100%;
         margin-bottom: 30px;
         padding: 0 20px;
@@ -150,7 +146,6 @@
                             border-right: 0.5px solid;
                         }
 
-                        
                         &:nth-child(2) {
                             border-left: 0.5px solid;
                         }
@@ -161,7 +156,6 @@
                             background-size: contain;
                             background-repeat: no-repeat;
                             margin-left: 19px;
-    
                         }
                     }
 
@@ -210,7 +204,6 @@
                             }
                         }
                         .swatches {
-                           
                             display: flex;
                             flex-direction: column;
                             margin-top: 20px;
@@ -222,9 +215,8 @@
                                     font-size: $font-15;
                                     margin-left: 0;
                                 }
-    
+
                                 ul {
-                                    
                                     list-style: none;
                                     display: flex;
                                     flex-wrap: wrap;
@@ -234,32 +226,28 @@
                                     li {
                                         margin-bottom: 18px;
                                         width: 20%;
-                                        
-                                    
-                                       > input {
+
+                                        > input {
                                             display: none;
                                             outline: $black;
-
                                         }
-    
-                                        >  label {
+
+                                        > label {
                                             border-radius: 50%;
                                             cursor: pointer;
                                             border: 1px solid $gray;
                                             color: $darkGray;
-                                            
+
                                             display: block;
                                             height: 55px;
                                             width: 55px;
                                             padding-top: 18px;
                                             text-align: center;
-                                            &:hover{
+                                            &:hover {
                                                 font-weight: 600 !important;
                                                 border: 2px solid $darkGray !important;
-                                            }                                            
+                                            }
                                         }
-
-                                        
                                     }
                                 }
                             }
@@ -273,9 +261,8 @@
                                     font-size: $font-15;
                                     margin-left: 0;
                                 }
-    
+
                                 ul {
-                                    
                                     list-style: none;
                                     display: flex;
                                     flex-wrap: wrap;
@@ -285,15 +272,13 @@
                                     li {
                                         margin-bottom: 18px;
                                         width: 20%;
-                                        
-                                    
-                                       > input {
+
+                                        > input {
                                             display: none;
                                             outline: $black;
-
                                         }
-    
-                                        >  label {
+
+                                        > label {
                                             cursor: pointer;
                                             border: 1px solid $gray;
                                             color: $darkGray;
@@ -302,14 +287,12 @@
                                             height: 77px;
                                             width: 53px;
                                             padding-top: 18px;
-                                            text-align: center;    
+                                            text-align: center;
                                             &:hover {
                                                 font-weight: 600 !important;
                                                 border: 2px solid $red !important;
-                                            }                                        
+                                            }
                                         }
-
-                                        
                                     }
                                 }
                             }
@@ -323,27 +306,24 @@
                                     font-size: $font-15;
                                     margin-left: 0;
                                 }
-    
+
                                 ul {
-                                    
                                     list-style: none;
                                     display: flex;
                                     flex-direction: row;
                                     padding: 0;
-                               
 
                                     li {
                                         margin-bottom: 18px;
                                         width: 20%;
-                                        
-                                    
-                                       > input {
+
+                                        > input {
                                             display: none;
                                             outline: $black;
                                             position: relative;
                                         }
-    
-                                        >  label {
+
+                                        > label {
                                             position: absolute;
                                             border-radius: 50%;
                                             cursor: pointer;
@@ -353,15 +333,13 @@
                                             display: block;
                                             height: 22px;
                                             width: 22px;
-                                            
-                                            text-align: center;    
+
+                                            text-align: center;
                                             &:hover {
                                                 font-weight: 600 !important;
                                                 border: 2px solid $red !important;
-                                            }                                        
+                                            }
                                         }
-
-                                        
                                     }
                                 }
                             }
@@ -457,18 +435,27 @@
                     .price {
                         display: flex;
                         flex-direction: column;
-                        @include breakpoints-up(large) {
-                            display: block;
-                        }
-                        font-size: $font-15;
-                        font-weight: 500;
+
                         margin-bottom: 5px;
 
-                        > span {
+                        @include breakpoints-up(large) {
+                            flex-direction: row;
+                            align-items: center;
+                        }
+
+                        p {
                             text-decoration-line: line-through;
                             font-size: $font-11;
                             color: $gray;
                             margin-right: 10px;
+
+                            &:last-child {
+                                font-size: $font-15;
+                                font-weight: 400;
+
+                                text-decoration-line: none;
+                                color: $black;
+                            }
                         }
                     }
 
@@ -492,5 +479,3 @@
         }
     }
 }
-
-
